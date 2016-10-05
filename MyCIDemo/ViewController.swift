@@ -10,9 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var qweMyLabel: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        var myDict: NSDictionary?
+        if let path = NSBundle.mainBundle().pathForResource("Info", ofType: "plist") {
+            myDict = NSDictionary(contentsOfFile: path)
+        }
+        if let dict = myDict {
+            print(dict)
+            // Use your dict here
+            self.qweMyLabel.text = dict["LABEL_CONTENT"] as! String
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

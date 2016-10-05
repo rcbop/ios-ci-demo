@@ -15,6 +15,7 @@
 		D48B09271DA594AD00A648B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48B09251DA594AD00A648B2 /* LaunchScreen.storyboard */; };
 		D48B09321DA594AD00A648B2 /* MyCIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B09311DA594AD00A648B2 /* MyCIDemoTests.swift */; };
 		D48B093D1DA594AD00A648B2 /* MyCIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B093C1DA594AD00A648B2 /* MyCIDemoUITests.swift */; };
+		D48B095A1DA59FCE00A648B2 /* EnvironmentConfigurations in Resources */ = {isa = PBXBuildFile; fileRef = D48B09591DA59FCE00A648B2 /* EnvironmentConfigurations */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D48B09381DA594AD00A648B2 /* MyCIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48B093C1DA594AD00A648B2 /* MyCIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCIDemoUITests.swift; sourceTree = "<group>"; };
 		D48B093E1DA594AD00A648B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48B09591DA59FCE00A648B2 /* EnvironmentConfigurations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EnvironmentConfigurations; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		D48B090D1DA594AD00A648B2 = {
 			isa = PBXGroup;
 			children = (
+				D48B09591DA59FCE00A648B2 /* EnvironmentConfigurations */,
 				D48B09181DA594AD00A648B2 /* MyCIDemo */,
 				D48B09301DA594AD00A648B2 /* MyCIDemoTests */,
 				D48B093B1DA594AD00A648B2 /* MyCIDemoUITests */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D48B09271DA594AD00A648B2 /* LaunchScreen.storyboard in Resources */,
+				D48B095A1DA59FCE00A648B2 /* EnvironmentConfigurations in Resources */,
 				D48B09241DA594AD00A648B2 /* Assets.xcassets in Resources */,
 				D48B091F1DA594AD00A648B2 /* Main.storyboard in Resources */,
 			);
@@ -353,6 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -467,6 +472,246 @@
 			};
 			name = Release;
 		};
+		D48B094D1DA5994E00A648B2 /* Debug-BR */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = EnvironmentConfigurations/BR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-BR";
+		};
+		D48B094E1DA5994E00A648B2 /* Debug-BR */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EnvironmentConfigurations/BR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Debug-BR";
+		};
+		D48B094F1DA5994E00A648B2 /* Debug-BR */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyCIDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCIDemo.app/MyCIDemo";
+			};
+			name = "Debug-BR";
+		};
+		D48B09501DA5994E00A648B2 /* Debug-BR */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCIDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyCIDemo;
+			};
+			name = "Debug-BR";
+		};
+		D48B09511DA5995600A648B2 /* Debug-AG */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = EnvironmentConfigurations/AG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-AG";
+		};
+		D48B09521DA5995600A648B2 /* Debug-AG */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EnvironmentConfigurations/AG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Debug-AG";
+		};
+		D48B09531DA5995600A648B2 /* Debug-AG */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyCIDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCIDemo.app/MyCIDemo";
+			};
+			name = "Debug-AG";
+		};
+		D48B09541DA5995600A648B2 /* Debug-AG */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCIDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyCIDemo;
+			};
+			name = "Debug-AG";
+		};
+		D48B09551DA5995E00A648B2 /* Debug-US */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = EnvironmentConfigurations/US/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-US";
+		};
+		D48B09561DA5995E00A648B2 /* Debug-US */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EnvironmentConfigurations/US/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Debug-US";
+		};
+		D48B09571DA5995E00A648B2 /* Debug-US */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyCIDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCIDemo.app/MyCIDemo";
+			};
+			name = "Debug-US";
+		};
+		D48B09581DA5995E00A648B2 /* Debug-US */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCIDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.testincdemo.MyCIDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyCIDemo;
+			};
+			name = "Debug-US";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,6 +719,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D48B093F1DA594AD00A648B2 /* Debug */,
+				D48B094D1DA5994E00A648B2 /* Debug-BR */,
+				D48B09551DA5995E00A648B2 /* Debug-US */,
+				D48B09511DA5995600A648B2 /* Debug-AG */,
 				D48B09401DA594AD00A648B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -483,6 +731,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D48B09421DA594AD00A648B2 /* Debug */,
+				D48B094E1DA5994E00A648B2 /* Debug-BR */,
+				D48B09561DA5995E00A648B2 /* Debug-US */,
+				D48B09521DA5995600A648B2 /* Debug-AG */,
 				D48B09431DA594AD00A648B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -491,6 +742,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D48B09451DA594AD00A648B2 /* Debug */,
+				D48B094F1DA5994E00A648B2 /* Debug-BR */,
+				D48B09571DA5995E00A648B2 /* Debug-US */,
+				D48B09531DA5995600A648B2 /* Debug-AG */,
 				D48B09461DA594AD00A648B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -499,6 +753,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D48B09481DA594AD00A648B2 /* Debug */,
+				D48B09501DA5994E00A648B2 /* Debug-BR */,
+				D48B09581DA5995E00A648B2 /* Debug-US */,
+				D48B09541DA5995600A648B2 /* Debug-AG */,
 				D48B09491DA594AD00A648B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
