@@ -4,32 +4,32 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MyCIDemo.xcscheme</key>
+		<key>MyCIDemo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>MyCIDemoAG.xcscheme</key>
+		<key>MyCIDemoAG.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>MyCIDemoBR.xcscheme</key>
+		<key>MyCIDemoBR.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>MyCIDemoUITestsBR.xcscheme</key>
+		<key>MyCIDemoUITestsBR.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>MyCIDemoUS.xcscheme</key>
+		<key>MyCIDemoUS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>MyCIDemoUnitTestBR.xcscheme</key>
+		<key>MyCIDemoUnitTestBR.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
