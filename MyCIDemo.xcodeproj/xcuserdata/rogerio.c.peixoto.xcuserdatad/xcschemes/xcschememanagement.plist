@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>MyCIDemoUITestsBR.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>MyCIDemoUS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

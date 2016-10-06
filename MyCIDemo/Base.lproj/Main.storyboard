@@ -20,15 +20,27 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWS-YS-8M2">
                                 <rect key="frame" x="200" y="244" width="200" height="111"/>
                                 <accessibility key="accessibilityConfiguration" identifier="MainLabel"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.042973399572762465" green="0.56834914921465973" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="0.071741149341799648" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mx5-os-gYM">
+                                <rect key="frame" x="195" y="333" width="211" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Próxima Tela">
+                                    <color key="titleColor" red="0.17966073612697239" green="0.35224115413095503" blue="0.92631299083769636" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Pup-ym-7f5" kind="show" id="Al6-Vh-zxo"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.90283773320000005" blue="0.071186753520000007" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="VWS-YS-8M2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Is9-6j-kkw"/>
                             <constraint firstItem="VWS-YS-8M2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QJn-BW-Qna"/>
+                            <constraint firstItem="mx5-os-gYM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rqh-pe-8li"/>
+                            <constraint firstItem="mx5-os-gYM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="wZ3-jE-wjw"/>
                         </constraints>
                     </view>
                     <connections>
@@ -37,7 +49,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="241"/>
+            <point key="canvasLocation" x="345" y="241"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ceM-Da-XMQ">
+            <objects>
+                <viewController id="Pup-ym-7f5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ye-7y-ffs"/>
+                        <viewControllerLayoutGuide type="bottom" id="gDK-6h-fkj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aVu-gx-icK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUCESSO!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgJ-Cv-2BC">
+                                <rect key="frame" x="185" y="271" width="231" height="58"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36935216949999999" green="0.77525252529999999" blue="0.37052603360000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fgJ-Cv-2BC" firstAttribute="centerX" secondItem="aVu-gx-icK" secondAttribute="centerX" id="5mt-Ae-gkj"/>
+                            <constraint firstItem="fgJ-Cv-2BC" firstAttribute="centerY" secondItem="aVu-gx-icK" secondAttribute="centerY" id="T57-ZI-4jy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQB-bw-zjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173" y="241"/>
         </scene>
     </scenes>
 </document>
