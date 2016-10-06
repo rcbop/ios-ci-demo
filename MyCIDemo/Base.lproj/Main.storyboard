@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Z9-LB-7Mr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="c8R-YL-gVU">
+            <objects>
+                <navigationController id="9Z9-LB-7Mr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bmn-Yk-hDV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4W3-rz-xgG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssi-Jk-mhZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4325" y="-212"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -43,18 +59,19 @@
                             <constraint firstItem="mx5-os-gYM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="wZ3-jE-wjw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Rb7-GX-Wnd"/>
                     <connections>
                         <outlet property="qweMyLabel" destination="VWS-YS-8M2" id="a7q-sv-bUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="241"/>
+            <point key="canvasLocation" x="-2711" y="-199"/>
         </scene>
-        <!--View Controller-->
+        <!--Success View Controller-->
         <scene sceneID="ceM-Da-XMQ">
             <objects>
-                <viewController id="Pup-ym-7f5" sceneMemberID="viewController">
+                <viewController id="Pup-ym-7f5" customClass="SuccessViewController" customModule="MyCIDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ye-7y-ffs"/>
                         <viewControllerLayoutGuide type="bottom" id="gDK-6h-fkj"/>
@@ -69,17 +86,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plb-kf-Nrm">
+                                <rect key="frame" x="280" y="337" width="41" height="30"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="btnBack2:" destination="Pup-ym-7f5" eventType="touchUpInside" id="R1S-Sn-sWU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36935216949999999" green="0.77525252529999999" blue="0.37052603360000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fgJ-Cv-2BC" firstAttribute="centerX" secondItem="aVu-gx-icK" secondAttribute="centerX" id="5mt-Ae-gkj"/>
+                            <constraint firstItem="plb-kf-Nrm" firstAttribute="centerY" secondItem="aVu-gx-icK" secondAttribute="centerY" constant="52" id="MSs-iA-2Kv"/>
                             <constraint firstItem="fgJ-Cv-2BC" firstAttribute="centerY" secondItem="aVu-gx-icK" secondAttribute="centerY" id="T57-ZI-4jy"/>
+                            <constraint firstItem="plb-kf-Nrm" firstAttribute="centerX" secondItem="aVu-gx-icK" secondAttribute="centerX" id="nz9-wB-5SC"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQB-bw-zjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1173" y="241"/>
+            <point key="canvasLocation" x="-1963" y="-207"/>
         </scene>
     </scenes>
 </document>
