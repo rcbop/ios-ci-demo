@@ -17,6 +17,15 @@ echo ">> RUNNING AUTOMATED TESTS"
  test -only "${TARGET}" || echo '>> TEST EXECUTION FAILED'
 ```
 
+## Packaging Calabash features for AWS Device Farm upload 
+```bash
+if [[ $RUN_CALABASH == "true" ]]; then
+        echo ">> PACKING CALABASH TESTS"
+        /usr/bin/zip -r "tests.zip" features
+    SCHEME="MyCIDemoBR-calabash"
+fi
+```
+
 ##Archiving and packaging IPA
 **Use Calabash scheme**
 *SCHEME = "MyCIDemoBR-calabash"*
