@@ -1,5 +1,6 @@
 # ios-ci-demo
 iOS example app ready for Continuous Integration with Calabash E2E tests
+Some Jenkins job configuration examples bellow
 
 ##Running Unit tests from Jenkins
 
@@ -20,8 +21,8 @@ echo ">> RUNNING AUTOMATED TESTS"
 ## Packaging Calabash features for AWS Device Farm upload 
 ```bash
 if [[ $RUN_CALABASH == "true" ]]; then
-        echo ">> PACKING CALABASH TESTS"
-        /usr/bin/zip -r "tests.zip" features
+    echo ">> PACKING CALABASH TESTS"
+    /usr/bin/zip -r "tests.zip" features
     SCHEME="MyCIDemoBR-calabash"
 fi
 ```
@@ -43,7 +44,7 @@ PROJECT_NAME=MyCIDemo
     -o "${WORKSPACE}/${PROJECT_NAME}-${BUILD_NUMBER}.ipa" \
 ```
 
-##Running Calabash features
+##Running Calabash features locally
 ```bash
  # install calabash sandbox
  curl -sSL https://raw.githubusercontent.com/calabash/install/master/install-osx.sh | bash
