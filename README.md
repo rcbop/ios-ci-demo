@@ -1,9 +1,10 @@
 # ios-ci-demo
 iOS example app ready for Continuous Integration with Calabash E2E tests
 
-*Running Unit tests from Jenkins*
+##Running Unit tests from Jenkins
 
-BUILD_CONFIGURATION = { Debug-BR, Debug-AG, Debug-US }
+*TARGET = { MyCIDemoTests }*
+*BUILD_CONFIGURATION = { Debug-BR, Debug-AG, Debug-US }*
 ```bash
 echo ">> RUNNING AUTOMATED TESTS"
 /usr/local/bin/xctool \
@@ -16,7 +17,7 @@ echo ">> RUNNING AUTOMATED TESTS"
  test -only "${TARGET}" || echo '>> TEST EXECUTION FAILED'
 ```
 
-*Archiving and packaging IPA*
+##Archiving and packaging IPA
 
 ```bash
 xcodebuild -scheme ${SCHEME} archive \
