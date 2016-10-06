@@ -18,7 +18,8 @@ echo ">> RUNNING AUTOMATED TESTS"
 ```
 
 ##Archiving and packaging IPA
-
+**Use Calabash scheme**
+*SCHEME = "MyCIDemoBR-calabash"*
 ```bash
 xcodebuild -scheme ${SCHEME} archive \
  -archivePath ${WORKSPACE}/MyCiDemo.xcarchive 
@@ -32,3 +33,13 @@ PROJECT_NAME=MyCIDemo
 	-v "${WORKSPACE}/MyCiDemo.xcarchive/Products/Applications/${PROJECT_NAME}.app" \
     -o "${WORKSPACE}/${PROJECT_NAME}-${BUILD_NUMBER}.ipa" \
 ```
+
+##Running Calabash features
+```bash
+ # install calabash sandbox
+ curl -sSL https://raw.githubusercontent.com/calabash/install/master/install-osx.sh | bash
+ # enters calabahs sandbox
+ calabash-sandbox 
+ # runs sample feature
+ bundle exec cucumber
+ ```
