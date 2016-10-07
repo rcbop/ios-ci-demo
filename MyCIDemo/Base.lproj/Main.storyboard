@@ -42,6 +42,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mx5-os-gYM">
                                 <rect key="frame" x="195" y="333" width="211" height="54"/>
+                                <accessibility key="accessibilityConfiguration" identifier="nextButton"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Próxima Tela">
                                     <color key="titleColor" red="0.17966073612697239" green="0.35224115413095503" blue="0.92631299083769636" alpha="1" colorSpace="calibratedRGB"/>
@@ -82,12 +83,15 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUCESSO!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgJ-Cv-2BC">
                                 <rect key="frame" x="185" y="271" width="231" height="58"/>
+                                <accessibility key="accessibilityConfiguration" identifier="successLabel"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plb-kf-Nrm">
-                                <rect key="frame" x="280" y="337" width="41" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plb-kf-Nrm">
+                                <rect key="frame" x="251" y="337" width="99" height="53"/>
+                                <accessibility key="accessibilityConfiguration" identifier="backButton"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Voltar"/>
                                 <connections>
                                     <action selector="btnBack2:" destination="Pup-ym-7f5" eventType="touchUpInside" id="R1S-Sn-sWU"/>
@@ -97,9 +101,9 @@
                         <color key="backgroundColor" red="0.36935216949999999" green="0.77525252529999999" blue="0.37052603360000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fgJ-Cv-2BC" firstAttribute="centerX" secondItem="aVu-gx-icK" secondAttribute="centerX" id="5mt-Ae-gkj"/>
-                            <constraint firstItem="plb-kf-Nrm" firstAttribute="centerY" secondItem="aVu-gx-icK" secondAttribute="centerY" constant="52" id="MSs-iA-2Kv"/>
+                            <constraint firstItem="plb-kf-Nrm" firstAttribute="centerY" secondItem="aVu-gx-icK" secondAttribute="centerY" constant="63.5" id="MSs-iA-2Kv"/>
                             <constraint firstItem="fgJ-Cv-2BC" firstAttribute="centerY" secondItem="aVu-gx-icK" secondAttribute="centerY" id="T57-ZI-4jy"/>
-                            <constraint firstItem="plb-kf-Nrm" firstAttribute="centerX" secondItem="aVu-gx-icK" secondAttribute="centerX" id="nz9-wB-5SC"/>
+                            <constraint firstItem="plb-kf-Nrm" firstAttribute="centerX" secondItem="aVu-gx-icK" secondAttribute="centerX" constant="0.5" id="nz9-wB-5SC"/>
                         </constraints>
                     </view>
                 </viewController>

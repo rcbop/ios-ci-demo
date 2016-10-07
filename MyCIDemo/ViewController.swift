@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var qweMyLabel: UILabel!
 
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         var myDict: NSDictionary?
@@ -20,11 +20,11 @@ class ViewController: UIViewController {
             myDict = NSDictionary(contentsOfFile: path)
         }
         if let dict = myDict {
-            print(dict)
+            //print(dict)
             // Use your dict here
-            self.qweMyLabel.text = dict["LABEL_CONTENT"] as! String
+            self.qweMyLabel.text = dict["LABEL_CONTENT"] as? String
         }
-        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,4 +34,3 @@ class ViewController: UIViewController {
 
 
 }
-
